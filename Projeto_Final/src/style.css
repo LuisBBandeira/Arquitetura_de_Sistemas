@@ -1,0 +1,583 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+
+
+a{
+    color:white;
+    text-decoration: white;
+    display: block;
+    padding: 25px;
+    margin: 0;
+}
+
+body{
+
+    background-image: url('backgrounddesktop.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-color: #222222;
+
+}
+
+
+h1{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 75px */
+}
+
+h2{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 45px */
+}
+
+h3{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /*22.5px */
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu{
+    background-color: rgba(38,38,38 ,0.50);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 40px;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+} 
+ 
+.menu ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0 auto;
+    box-align: center;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.buttomGroup{ 
+    font-family: Work Sans;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+}
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: #FFF;
+}
+
+header ul .submenu{
+    position: absolute;
+    width: 200px;
+    background-color: rgba(38,38,38 ,0.50);
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.25s ;
+}
+
+header ul li:hover .submenu{
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+
+.HomeButtom:hover{
+    font-size: 0;
+}
+
+.HomeButtom:hover::after{
+    transition: all ease 0.25s ;  
+    content: "/Home";
+    font-size: 25px;
+    font-family: Work Sans;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 83px;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.AboutButtom:hover{
+    font-size: 0;
+}
+
+.AboutButtom:hover::after{
+    transition: all ease 0.25s ;
+    content: "/About";
+    font-size: 25px;
+    font-family: Work Sans;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 83px;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.SkillsButtom:hover{
+    font-size: 0; 
+}
+
+.SkillsButtom:hover::after{
+    transition: all ease 0.25s ;
+    content: "/Skills";
+    font-size: 25px;
+    font-family: Work Sans;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 79px;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.PortfolioButtom:hover{
+    font-size: 0;
+}
+
+.PortfolioButtom:hover::after{
+    transition: all ease 0.25s ;
+    content: "/Portfolio";
+    font-size: 25px;
+    font-family: Work Sans;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 123px;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.ContactButtom:hover{
+    font-size: 0;
+}
+
+.ContactButtom:hover::after{
+    transition: all ease 0.25s ;
+    content: "/Contact";
+    font-size: 25px;
+    font-family: Work Sans;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 110px;
+    height: 30px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+
+
+
+.NomeOcupacao{
+    display: flex;
+    flex-direction: column;
+    height: 1080px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.About{
+    display: flex;
+    height: 1080px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.foto_bio{
+    width: 480.168px;
+    height: 579.312px;
+    margin: 0 0;
+
+}
+
+#image_About{
+    width: 480.168px;
+    height: 579.312px;
+    border: 4.5px solid #000;
+
+}
+
+
+#about_info{
+    width: 566px;
+    height: 579.312px;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 60px */
+}
+
+.Skill{
+    display: flex;
+    height: 1080px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.skills_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 125px;
+    margin-bottom: 5%;
+}
+
+.Skill_info{
+    text-align: center;
+}
+
+.icons_skill{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.git_icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.figma_icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.blender_icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photoshop_icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.EticEats{
+    display: flex;
+    flex-direction: row;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+.EticEats_Text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.EticEats_foto{
+    width: 718px;
+    height: 569px;
+    flex-shrink: 0;
+}
+
+.info_EticEats{
+    width: 393px;
+}
+
+.DLWallet{
+    display: flex;
+    flex-direction: row;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+.DlWallet_TexT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.DlWallet_foto{
+    width: 729px;
+    height: 757.8px;
+    flex-shrink: 0;
+}
+
+.info_DlWallet{
+    width: 393px;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: row;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact{
+    display: flex;
+    flex-direction: row;
+    height: 1080px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Globe_coms{
+    width: 506px;
+    height: 512px;
+    flex-shrink: 0;
+}
+
+.Social_Media{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 512px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.github_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 29px;
+}
+.discord_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 29px;
+}
+
+.gmail_icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 29px;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        background-color: rgba(38,38,38 ,0.50);
+        color: white;
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    .mobile-menu-items {
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .mobile-menu-items a {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    .mobile-menu-items ul{
+        list-style: none;
+        padding: 0%;
+        margin: 0 auto;
+        box-align: center;
+    }
+    
+    .mobile-menu-items li{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 75px */
+    }
+    
+    h2{
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 45px */
+    }
+
+    
+
+    .About{
+        display: flex;
+        height: 1080px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .foto_bio .img{
+        width: 288.101px;
+        height: 347.587px;
+    
+    }
+    
+    #image_About{
+        width: 288.101px;
+        height: 347.587px;
+        border: 4.5px solid #000;
+    
+    }
+
+    #about_info{
+        width: 359px;
+        height: 223px;
+        color: #FFF;
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; /* 60px */
+    }
+
+    #skill_info{
+        width: 236px;
+        height: 94px;
+    }
+
+    .EticEats{
+        display: flex;
+        flex-direction: column;
+        height: 1080px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .EticEats_Text{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info_EticEats{
+        text-align: center;
+        width: 236px;
+    }
+
+    .DLWallet{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1080px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info_DlWallet{
+        text-align: center;
+        width: 393px;
+    }
+
+    .Contact{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 1080px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+

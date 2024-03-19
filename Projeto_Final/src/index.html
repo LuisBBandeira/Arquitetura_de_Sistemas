@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> CV - Luis</title>
+        <link rel="stylesheet" href="style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.querySelector('.mobile-menu-items');
+            mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        function fechar() {
+            var mobileMenu = document.querySelector('.mobile-menu-items');
+            mobileMenu.style.display = 'none';
+        }
+    </script>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="menu">
+                    <div class="buttomGroup">
+                        <ul>
+                            <li><a class="HomeButtom" href="#Home" >Home</a></li>
+                            <li><a class="AboutButtom" href="#About" >About</a></li>
+                            <li><a class="SkillsButtom" href="#Skills">Skills</a></li>
+                            <li><a class="PortfolioButtom" href="#Portfolio">Portfolio</a>
+                                <ul class="submenu">
+                                    <li><a class="EticEatsButtom" href="#ET">Etic Eats</a></li>
+                                    <li><a class="DlWalletButtom" href="#Portfolio_DlWallet">DLWallet</a></li>
+                            </li>
+                                </ul>
+                            <li><a class="ContactButtom" href="#Contacts">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="menu-icon" onclick="toggleMobileMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="mobile-menu-items">
+                        <ul>
+                            <li><a class="HomeButtom" href="#Home" onclick="fechar()">Home</a></li>
+                            <li><a class="AboutButtom" href="#About" onclick="fechar()">About</a></li>
+                            <li><a class="SkillsButtom" href="#Skills" onclick="fechar()">Skills</a></li>
+                            <li><a class="EticEatsButtom" href="#ET" onclick="fechar()">Etic Eats</a></li>
+                            <li><a class="DlWalletButtom" href="#Portfolio_DlWallet" onclick="fechar()">DLWallet</a></li>
+                            <li><a class="ContactButtom" href="#Contacts" onclick="fechar()">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="Home">
+            <div Class="NomeOcupacao">
+                <h1>Luis Bandeira</h1>
+                <h2>Student</h2> 
+            </div>
+        </section>
+        <section id="About">
+            <div class="About">
+                <a class="foto_bio" id="imagem_about"><img src="bio_foto.png"></a>
+                <p id="about_info">Born in 2005, in Lagos, Portugal. Currently enrolled in Web Development in Etic Algarve. I believe that I am a great learner and that I can make great contributions to the world with my innovative work given enough time.</p>
+            </div>
+        </section>
+        <section id="Skills">
+            <div class="Skill">
+                <div class="skills_text">
+                        <h1>Skills & Experience</h1>
+                        <h2 id="skill_info">These are some of the skills that I have acquired during my journey in development</h2>
+                </div>
+                <div class="icons_skill">
+                    <a class="git_icon" href="https://git-scm.com/"><img src="icons/icongit.png"><h3>Git</h3></a>
+                    <a class="figma_icon" href="https://www.figma.com/"><img src="icons/iconfigma.png" ><h3>Figma</h3></a>
+                    <a class="blender_icon" href="https://www.blender.org/"><img src="icons/iconblender.png" ><h3>Blender</h3></a>
+                    <a class="photoshop_icon" href="https://www.adobe.com/pt/products/photoshop.html"><img src="icons/iconhotoshop.png" ><h3>Photoshop</h3></a>
+                </div>
+            </div>
+        </section>
+        <section>
+                <div id="ET" class="EticEats">
+                    <div class="EticEats_Text">
+                        <h1>Etic Eats</h1>
+                        <h2 class="info_EticEats">I was envolved in the development of the front office of Etic Eats</h2>
+                    </div>
+                    <a class="EticEats_foto" id="imagem_EticEats"><img src="EticEats.png"> </a>
+                </div>
+        </section>
+        <section>
+                <div id="Portfolio_DlWallet" class="DLWallet">
+                    <a class="DlWallet_foto" id="imagem_DlWallet"><img src="DLWallet.png"> </a>
+                    <div class="DlWallet_TexT">
+                        <h1>DLWallet</h1>
+                        <h2 class="info_DlWallet">I developed an app to track your daily expenses and monitor your total balance</h2>
+                    </div> 
+                </div>
+        </section>
+        <section id="Contacts">
+            <div class="Contact">
+                <a class="Globe_coms" ><img src="Globe.png"></a>
+                <div class="Social_Media">
+                    <a class="github_icon" href="https://github.com/LuisBBandeira"><img src="icons/icongithub.png"> LuisBBandeira</a>
+                    <a class="discord_icon" href=""><img src="icons/icondiscord.png">l.band</a>
+                    <a class="gmail_icon" href="mailto:luisfilipebentobandeira@gmail.com"><img src="icons/iconemail.png">luisfilipebentobandeira</a>
+                </div>
+            </div>
+        </section>  
+    </body>
+
+</html>
